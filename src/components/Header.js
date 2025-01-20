@@ -3,7 +3,7 @@ import classes from './Header.module.css';
 import { useSelector,useDispatch } from 'react-redux';
 
 const Header = () => {
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
   const isAuth = useSelector(state => state.auth.isAuthenticated);
 
   const logoutHandler = () => {
